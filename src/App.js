@@ -1,23 +1,28 @@
-import logo from './logo.svg';
+import { FaSearch } from 'react-icons/fa'
+import Bodied from "./components/Bodied";
+import Logod from "./components/Logod"
+import { useState } from "react";
+import names from "./components/data.json"
 import './App.css';
+import React from 'react';
 
 function App() {
+const [query,setQuery]= useState("")
+const onvalue=(e)=>setQuery(e.target.value)
+const filteredNames= names.filter((item)=>{
+    return item.id.includes(query.toLowerCase()) || item.name.includes(query.toLowerCase())
+  })
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header className="head">
+        <div className='heading'></div>
+        <div className="search">
+          <input type="text" placeholder="Search.." value={query} onChange={onvalue} className='input'/>
+          <FaSearch id="sbtn"/>
+        </div>
       </header>
+      {query.length >0 ?
+      <Bodied filter={filteredNames}/> : <Logod/>}
     </div>
   );
 }

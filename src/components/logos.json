@@ -1,0 +1,18 @@
+[
+    {
+        "id":"logos",
+        "blackwidow":"https://terrigen-cdn-dev.marvel.com/content/prod/1x/blackwidow_lob_log_def_06.png",
+        "hawkeye":"https://upload.wikimedia.org/wikipedia/commons/4/4a/Hawkeye_TV_series_logo.png",
+        "thor":"https://image.tmdb.org/t/p/original/hvsMANAPu3dKlzocjwcrV3OfQh2.png",
+        "hulk":"https://pngimg.com/uploads/hulk/hulk_PNG35.png",
+        "captainamerica":"https://picfiles.alphacoders.com/581/58173.png",
+        "ironman":"https://logos-world.net/wp-content/uploads/2020/12/Iron-Man-Logo.png",
+        "iron":"https://en.wikipedia.org/wiki/Iron_Man",
+        "cap":"https://en.wikipedia.org/wiki/Captain_America",
+        "hul":"https://en.wikipedia.org/wiki/Hulk",
+        "tho":"https://en.wikipedia.org/wiki/Thor_(Marvel_Comics)",
+        "black":"https://en.wikipedia.org/wiki/Black_Widow_(Marvel_Comics)",
+        "hawk":"https://en.wikipedia.org/wiki/Hawkeye_(Clint_Barton)",
+        "th":"https://terrigen-cdn-dev.marvel.com/content/prod/1x/thor_lob_log_def_01.png"
+    }
+]
